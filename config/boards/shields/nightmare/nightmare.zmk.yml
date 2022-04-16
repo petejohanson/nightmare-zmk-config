@@ -1,0 +1,8 @@
+file_format: "1"
+id: nightmare
+name: nightmare
+type: shield
+url: https://github.com/cfbender/keyboards/tree/master/nightmare
+requires: [pro_micro]
+features:
+  - keys
