@@ -22,20 +22,20 @@
 
 		default_layer {
 // |----------------------------------------------------------------------------------------------
-// |    | ESC  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  BKSP   |
-// |    | CTL   |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
-// |    |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |  SHIFT    |  Fn  |
-// |    |       |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |                |
+// |  TILDE  | ESC  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  BKSP   |
+// |  CAPS  | CTL   |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
+// |  TAB  |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |  SHIFT    |  Fn  |
+// |  K_PP  |       |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |                |
 // |----------------------------------------------------------------------------------------------
 			bindings = <
-&none    &gresc  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BSPC
-&none    &kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT           &kp RET
-&none    &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH    &kp RSHFT  &mo 1
+&kp TILDE    &gresc  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BSPC
+&kp  CAPS   &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT           &kp RET
+&kp TAB   &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH    &kp RSHFT  &mo 1
 
 #ifdef SPLIT_BAR
-&none         &kp LGUI &kp LALT &none        &kp SPACE    &kp BSPC           &none           &kp RALT  &kp RGUI
+&kp K_PP         &kp LGUI &kp LALT &none        &kp SPACE    &kp BSPC           &none           &kp RALT  &kp RGUI
 #else
-&none         &kp LGUI &kp LALT        &kp SPACE                     &kp RALT  &kp RGUI
+&kp K_PP         &kp LGUI &kp LALT        &kp SPACE                     &kp RALT  &kp RGUI
 #endif
 			>;
 		};
